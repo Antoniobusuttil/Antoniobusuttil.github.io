@@ -1,0 +1,199 @@
+/***************************************************************************** CSS RESET *****************************************************************************/
+
+* {
+box-sizing: border-box; /* So HTML Will Behave*/
+
+margin: 0;
+padding: 0;
+}
+
+/***************************************************************************** GENERIC ELEMENTS *****************************************************************************/
+
+body {
+    background-color: #fafafa;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.6;
+    min-height: 200vh;
+    padding-top: 60px;
+}
+
+hr {
+    border: none;
+
+    /* Values: Size Width Colour */
+    border-top: 1px solid #ccc;
+
+
+    /* !Important makes it difficult to change specific css commands later */
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+/***************************************************************************** INTRO SCREEN *****************************************************************************/
+
+.intro {
+    background-color: #d4d4d4;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 200vh; /* vh - viewport height */
+
+    width: auto; /*100vw is causing a small issue */
+    width: 100vw; /* vw - viewport width */
+
+    display: flex;
+
+    position: relative;
+    z-index: 1010;
+}
+
+.inro-narrow {
+    height: 75vh;
+    z-index: 900;
+}
+
+.inro-container {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5);
+    /* properties: X Y Radius Color */
+
+    width: 25%;
+
+    align-self: center;
+    text-align: center;
+
+    padding: 20px;
+    margin: auto;
+}
+
+.inro h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    line-height: 2;
+}
+
+
+
+
+/*****************************************************************************  MAIN CONTENT  *****************************************************************************/
+
+.main-content {
+    margin-top: 60px;
+}
+
+.content-narrow {
+    width: 50%;
+    min-width: 640px;
+
+    /* REMINDER: Centres Things Horizontally */
+    margin: auto;
+}
+
+.verticle title {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    transform: rotate(90deg) translate(5px);
+    transform-origin: 0 0; /*rotate from top to left*/
+
+    position: absolute;
+}
+
+/*****************************************************************************  FOOTER  *****************************************************************************/
+
+.website-footer {
+    background-color: #d3d3d3;
+    padding: 50px;
+}
+
+.website-footer .container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+
+    margin-left: auto;
+
+    columns: 2;
+    gap: 50px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.website-footer .copyright {
+    width: 100px;
+    color: #000;
+}
+
+/*****************************************************************************  NAVIGATOR  *****************************************************************************/
+
+.navbar {
+    background-color: #fff;
+
+    border-color: #eee;
+    border-style: solid;
+
+    /* cancels out all borders */
+
+    border-width: 0;
+    border-bottom-width: 1px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+ width: 100%;
+ height: 60px;
+ z-index: 1000;
+}
+
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+
+    /* scales the font by 150% of the original size */
+
+    font-size: 1.5em;
+
+    align-content: center;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+
+body {
+    padding-top: 60px; 
+}
